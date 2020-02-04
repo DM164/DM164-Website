@@ -1,0 +1,151 @@
+* {
+    user-select: none;
+}
+.info {
+    overflow: hidden;
+    background: #eaeaea;
+    padding: 30px 25%;
+    display: grid;
+}
+.img-container {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    grid-row: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 0px #0000006b;
+}
+.img-container img {
+    height: 100%;
+    width: 100%;
+}
+.text-container {
+    grid-row: 1;
+    padding: 20px 20px 20px 30px;
+}
+.name {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.info p {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+.social {
+    position: relative;
+    margin: 20px 0px 0px 0px;
+}
+.social a, .social p {
+    margin: 0px 0px 8px 0px;
+    background: black;
+    padding: 4px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Nunito';
+    font-size: 12px;
+    box-shadow: 0px 0px 20px 0px #0000006b;
+    transition: 0.3s;
+    transition-property: background, width, border, box-shadow;
+}
+.social a, .social p {
+    box-shadow: 0px 0px 20px 0px #000000b0;
+    transition-property: background, width, border, box-shadow;
+}
+.social p {
+    padding: 6px 10px;
+}
+
+.discord:hover {
+    user-select: all;
+    cursor: pointer;
+    background-color: #7289DA;
+}
+.email:hover {
+    user-select: all;
+    cursor: pointer;
+    background-color: #CE5042;
+}
+.instagram:hover {
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.facebook:hover {
+    background: #4267B2; 
+}
+.twitter:hover {
+    background: #1DA1F2; 
+}
+.linked-in:hover {
+    background: #0077B5; 
+}
+.github:hover {
+    background: #7BC96F; 
+}
+.stack:hover {
+    background: #F48024; 
+}
+
+.projects {
+    display: grid;
+    padding: 30px 25%;
+}
+.projects div {
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 0px #0000006b;
+}
+
+.projects img{
+    height: 100%;
+    position: relative;
+    transition: filter 0.3s;
+}
+.projects img:hover {
+    filter: blur(2px);
+}
+.projects h1 {
+    z-index: 1;
+    color: white;
+    position: relative;
+    top: -40px;
+    float: right;
+    font-size: 26px;
+    font-family: 'Nunito';
+    margin: 0px 16px 0px 0px;
+    text-shadow: 2px 2px 8px black;
+    pointer-events: none;
+}
+.one {
+    grid-row: 1;
+}
+.two {
+    grid-row: 1;
+}
+.three {
+    grid-row: 1;
+}
+.four{
+    grid-row: 2;
+    margin: 14px 0px 0px 0px;
+} 
+.five{
+    grid-row: 2;
+    margin: 14px 0px 0px 0px;
+} 
+.six {
+    grid-row: 2;
+    margin: 14px 0px 0px 0px;
+}
+
