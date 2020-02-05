@@ -1,7 +1,7 @@
 let dark = false
 
 document.getElementById('switch').addEventListener('click', () => {
-    if (dark === false){
+    if (dark === false) {
         document.getElementById('switch').style.rotate = '180deg'
         document.getElementById('switch').style.filter = 'invert(100%)'
         let darkCss = document.createElement('link')
@@ -89,7 +89,7 @@ document.getElementById('four').addEventListener('mouseleave', (e) => {
     document.getElementById('four-img').style.filter = ''
 })
 
-if (localStorage.getItem('theme') === 'dark'){
+if (localStorage.getItem('theme') === 'dark') {
     document.getElementById('switch').style.filter = 'invert(100%)'
     let darkCss = document.createElement('link')
     darkCss.href = 'dark.css'
