@@ -1,0 +1,17 @@
+.info {
+    background: #080808;
+}
+.text-container {
+    color: white;
+}
+.social a, .social p {
+    color: black;
+    background-color: white;
+    font-weight: 600;
+}
+body {
+    background: #0c0c0c;
+}
+.projects div {
+    box-shadow: 0px 0px 20px 0px #000000;
+}

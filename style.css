@@ -1,6 +1,23 @@
 * {
     user-select: none;
 }
+body, .info {
+    transition: background 0.5s;
+}
+
+img#switch {
+    position: absolute;
+    height: 25px;
+    right: 30px;
+    top: 30px;
+    transition-property: filter, rotate;
+    transition: 0.6s;
+}
+img#switch:hover {
+    filter: invert(16%);
+    cursor: pointer;
+}
+
 .info {
     overflow: hidden;
     background: #eaeaea;
@@ -105,6 +122,9 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 20px 0px #0000006b;
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
 }
 
 .projects img{
@@ -113,7 +133,7 @@
     transition: filter 0.3s;
 }
 .projects img:hover {
-    filter: blur(2px);
+    filter: blur(3px);
 }
 .projects h1 {
     z-index: 1;
@@ -121,11 +141,28 @@
     position: relative;
     top: -40px;
     float: right;
-    font-size: 26px;
+    font-size: 28px;
     font-family: 'Nunito';
     margin: 0px 16px 0px 0px;
     text-shadow: 2px 2px 8px black;
     pointer-events: none;
+    transition-property: top, font-size;
+    transition: 0.3s;
+}
+.projects p {
+    z-index: 1;
+    color: #f1f1f1;
+    position: relative;
+    top: 0px;
+    height: 174px;
+    float: right;
+    font-size: 18px;
+    font-family: 'Nunito';
+    margin: 0px 6px 0px 16px;
+    text-shadow: 2px 2px 2px black;
+    transition-property: top, font-size;
+    transition: 0.4s;
+    overflow: scroll;
 }
 .one {
     grid-row: 1;
@@ -149,3 +186,121 @@
     margin: 14px 0px 0px 0px;
 }
 
+div.five, div.six {
+    background-color: #181818;
+}
+.projects h2 {
+    z-index: 1;
+    color: white;
+    position: relative;
+    bottom: -160px;
+    float: right;
+    font-size: 28px;
+    font-family: 'Nunito';
+    margin: 0px 16px 0px 0px;
+    text-shadow: 2px 2px 8px black;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1832px){
+    .projects {
+        display: grid;
+        padding: 30px 20%;
+    }
+}
+@media screen and (max-width: 1570px){
+    .info {
+        padding: 30px 20%;
+    }
+    .projects {
+        display: grid;
+        padding: 30px 15%;
+    }
+}
+@media screen and (max-width: 1350px){
+    .info {
+        padding: 30px 15%;
+    }
+    .projects {
+        display: grid;
+        padding: 30px 10%;
+    }
+}
+@media screen and (max-width: 1242px){
+    .projects {
+        display: grid;
+        padding: 30px 10%;
+    }
+}
+@media screen and (max-width: 1182px){
+    .info {
+        padding: 30px 8%;
+    }
+    .projects {
+        display: grid;
+        padding: 30px 2%;
+    }
+}
+@media screen and (max-width: 970px){
+    .info {
+        padding: 30px 8%;
+    }
+    .projects {
+        display: block;
+        padding: 30px 2%;
+    }
+    .projects div {
+        width: 100%;
+        height: 200px;
+        display: inline-block;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px 0px #0000006b;
+        position: relative;
+        left: 0%;
+        margin-left: 0px;
+    }
+    .projects img {
+        position: relative;
+        transition: filter 0.3s;
+        width: 100%;
+    }
+    .img-container {
+        height: 100px;
+        width: 100px;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .info p {
+        font-size: 14px;
+    }
+    .social a, .social p {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 520px){
+    .img-container{
+        display: none;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    /* height: 147px; */
+}
+::-webkit-scrollbar-thumb {
+    background: #ffffff41 !important;
+    border-radius: 10px !important;
+    transition: 0.3s background ease-in-out;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    border: none !important;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    border: none !important;
+}
