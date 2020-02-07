@@ -60,7 +60,7 @@ img#switch:hover {
 .social a, .social p {
     margin: 0px 0px 8px 0px;
     background: black;
-    padding: 4px 10px;
+    padding: 6px 10px;
     text-decoration: none;
     color: white;
     border-radius: 20px;
@@ -69,13 +69,7 @@ img#switch:hover {
     box-shadow: 0px 0px 20px 0px #0000006b;
     transition: 0.3s;
     transition-property: background, width, border, box-shadow;
-}
-.social a, .social p {
-    box-shadow: 0px 0px 20px 0px #000000b0;
-    transition-property: background, width, border, box-shadow;
-}
-.social p {
-    padding: 6px 10px;
+    display: inline-block;
 }
 
 .discord:hover {
