@@ -1,6 +1,10 @@
 let dark = false
 
 document.getElementById('switch').addEventListener('click', () => {
+    switchTheme()
+})
+
+function switchTheme(){
     if (dark === false) {
         document.getElementById('switch').style.rotate = '180deg'
         document.getElementById('switch').style.filter = 'invert(100%)'
@@ -20,7 +24,7 @@ document.getElementById('switch').addEventListener('click', () => {
             location.reload()
         }, 600);
     }
-})
+}
 
 document.getElementsByClassName('discord')[0].addEventListener('click', (e) => {
     let text = "iGoof#0892";
@@ -122,6 +126,10 @@ document.getElementById('four').addEventListener('mouseleave', (e) => {
 
 if (localStorage.getItem('theme') === 'dark') {
     document.getElementById('switch').style.filter = 'invert(100%)'
+    let noFlash = document.createElement('link')
+    noFlash.href = 'noFlash.css'
+    noFlash.rel = 'stylesheet'
+    document.getElementsByTagName('head')[0].append(noFlash)
     let darkCss = document.createElement('link')
     darkCss.href = 'dark.css'
     darkCss.rel = 'stylesheet'
