@@ -73,14 +73,34 @@ img#switch:hover {
 }
 
 .discord:hover {
-    user-select: all;
     cursor: pointer;
     background-color: #7289DA;
 }
 .email:hover {
-    user-select: all;
     cursor: pointer;
     background-color: #CE5042;
+}
+div#cb-info {
+    position: absolute;
+    background: #4da34c;
+    /* background: #c2ae3c; */
+    padding: 15px 25px;
+    left: 50%;
+    margin: 20px 0px 0px -114.1px;
+    border-radius: 30px;
+    box-shadow: 0 0 8px 0px #000000c7;
+    font-family: 'Nunito';
+    color: white;
+    display: none;
+    animation: bounce-off 0.3s forwards;
+}
+@keyframes bounce-off {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(0px); }
+}
+@keyframes bounce-off-reversed {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-100px); }
 }
 .instagram:hover {
     background: #f09433; 

@@ -22,6 +22,25 @@ document.getElementById('switch').addEventListener('click', () => {
     }
 })
 
+document.getElementsByClassName('discord')[0].addEventListener('click', (e) => {
+    let text = "iGoof#0892";
+    navigator.clipboard.writeText(text).then(function () {
+        console.log('Async: Copying to clipboard was successful!');
+    }, function (err) {
+        console.error('Async: Could not copy text: ', err);
+    });
+
+    document.getElementById('cb-info').style.display = 'inline-block'
+
+    setTimeout(() => {
+        document.getElementById('cb-info').style.animation = 'bounce-off-reversed 0.3s forwards'
+        setTimeout(() => {
+            document.getElementById('cb-info').style.display = 'none'
+            document.getElementById('cb-info').style.animation = 'bounce-off 0.3s forwards'
+        }, 300);
+    }, 3000);
+})
+
 document.getElementsByClassName('discord')[0].addEventListener('mouseover', (e) => {
     document.getElementsByClassName('discord')[0].innerText = 'iGoof#0982'
 })
@@ -29,11 +48,23 @@ document.getElementsByClassName('discord')[0].addEventListener('mouseleave', (e)
     document.getElementsByClassName('discord')[0].innerText = 'Discord'
 })
 
-document.getElementsByClassName('email')[0].addEventListener('mouseover', (e) => {
-    document.getElementsByClassName('email')[0].innerText = 'denistschurtschenthaler@gmail.com'
-})
-document.getElementsByClassName('email')[0].addEventListener('mouseleave', (e) => {
-    document.getElementsByClassName('email')[0].innerText = 'E-Mail'
+document.getElementsByClassName('email')[0].addEventListener('click', (e) => {
+    let text = "denistschurtschenthaler@gmail.com";
+    navigator.clipboard.writeText(text).then(function () {
+        console.log('Async: Copying to clipboard was successful!');
+    }, function (err) {
+        console.error('Async: Could not copy text: ', err);
+    });
+
+    document.getElementById('cb-info').style.display = 'inline-block'
+
+    setTimeout(() => {
+        document.getElementById('cb-info').style.animation = 'bounce-off-reversed 0.3s forwards'
+        setTimeout(() => {
+            document.getElementById('cb-info').style.display = 'none'
+            document.getElementById('cb-info').style.animation = 'bounce-off 0.3s forwards'
+        }, 300);
+    }, 3000);
 })
 
 //one
