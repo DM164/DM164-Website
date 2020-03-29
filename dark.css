@@ -15,3 +15,56 @@ body {
 .projects div {
     box-shadow: 0px 0px 20px 0px #000000;
 }
+button#support, #send-mail {
+    background: #fdfdfd;
+    border: 1px solid #fdfdfd;
+    color: black;
+}
+button#support:hover, #send-mail:hover {
+    background: white;
+    border: 1px solid white;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 2px #e0e0e04a;
+}
+
+button#send-mail {
+    background: #1f1f1f;
+    border: 1px solid #1f1f1f;
+    color: white;
+}
+button#send-mail:hover {
+    background: #252525;
+    border: 1px solid #252525;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 2px #0000004a;
+}
+
+.support-body h2 {
+    color: white;
+}
+.support-body p {
+    color: #c7c7c7;
+}
+textarea#more {
+    border: 1px solid #191919;
+    background: #080808;
+    color: rgb(182, 182, 182);
+    border-top: 0px;
+}
+input#product {
+    border: 1px solid #191919;
+    background: #080808;
+    color: rgb(182, 182, 182);
+}
+
+.discord-body {
+    background: #080808;
+    border: 1px solid #111111;
+}
+.discord-body:hover {
+    background: #0f0f0f;
+    border: 1px solid #191919;
+}
+a {
+    color: white;
+}

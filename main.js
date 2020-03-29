@@ -136,3 +136,17 @@ if (localStorage.getItem('theme') === 'dark') {
     document.getElementsByTagName('head')[0].append(darkCss)
     dark = true
 }
+
+// Open support form
+let supportOpen = false
+document.getElementById('support').addEventListener('click', () => {
+    if (supportOpen === false){
+        document.getElementsByClassName('projects')[0].style.display='none'
+        document.getElementsByClassName('support-body')[0].style.display='block'
+        supportOpen = true
+    } else {
+        document.getElementsByClassName('projects')[0].style.display='grid'
+        document.getElementsByClassName('support-body')[0].style.display='none'
+        supportOpen = false
+    }
+})
