@@ -93,6 +93,7 @@ div#cb-info {
     color: white;
     display: none;
     animation: bounce-off 0.3s forwards;
+    z-index: 1;
 }
 @keyframes bounce-off {
     0% { transform: translateY(-100px); }
@@ -333,6 +334,9 @@ a {
 }
 
 @media screen and (max-width: 1832px){
+    .info {
+        padding: 30px 20%;
+    }
     .projects {
         display: grid;
         padding: 30px 20%;
@@ -343,7 +347,7 @@ a {
 }
 @media screen and (max-width: 1570px){
     .info {
-        padding: 30px 20%;
+        padding: 30px 15%;
     }
     .projects {
         display: grid;
@@ -355,7 +359,7 @@ a {
 }
 @media screen and (max-width: 1350px){
     .info {
-        padding: 30px 15%;
+        padding: 30px 10%;
     }
     .projects {
         display: grid;
@@ -373,7 +377,7 @@ a {
 }
 @media screen and (max-width: 1182px){
     .info {
-        padding: 30px 8%;
+        padding: 30px 2%;
     }
     .projects {
         display: grid;
@@ -385,11 +389,12 @@ a {
 }
 @media screen and (max-width: 970px){
     .info {
-        padding: 30px 8% 0px 8%;
+        padding: 30px 2% 0px 2%;
     }
     .projects {
         display: block;
         padding: 30px 2%;
+        text-align: center;
     }
     .projects div {
         width: 100%;
@@ -401,6 +406,7 @@ a {
         position: relative;
         left: 0%;
         margin-left: 0px;
+        max-width: 400px;
     }
     .projects img {
         position: relative;
@@ -424,6 +430,9 @@ a {
 @media screen and (max-width: 550px){
     .img-container{
         display: none;
+    }
+    textarea:active, input:active {
+        font-size: 100%;
     }
 }
 @media screen and (max-width: 550px){
