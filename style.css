@@ -460,3 +460,8 @@ a {
     border-radius: 0 !important;
     border: none !important;
 }
+
+/* Remove inner shadow from inputs on mobile iOS */
+textarea, input[type="text"] {
+    -webkit-appearance: none;
+}
