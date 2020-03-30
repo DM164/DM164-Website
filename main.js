@@ -141,10 +141,12 @@ if (localStorage.getItem('theme') === 'dark') {
 let supportOpen = false
 document.getElementById('support').addEventListener('click', () => {
     if (supportOpen === false){
+        document.getElementById('support').innerText = 'Home'
         document.getElementsByClassName('projects')[0].style.display='none'
         document.getElementsByClassName('support-body')[0].style.display='block'
         supportOpen = true
     } else {
+        document.getElementById('support').innerText = 'Get support'
         document.getElementsByClassName('projects')[0].style.display='grid'
         document.getElementsByClassName('support-body')[0].style.display='none'
         supportOpen = false
