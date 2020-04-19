@@ -408,10 +408,17 @@ a {
         margin-left: 0px;
         max-width: 400px;
     }
+    .projects h1 {
+        top: -190px;
+    }
+    .projects p {
+        top: -180px;
+    }
     .projects img {
         position: relative;
         transition: filter 0.3s;
         width: 100%;
+        filter: brightness(0.3);
     }
     .img-container {
         height: 100px;
