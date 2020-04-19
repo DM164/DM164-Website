@@ -76,7 +76,7 @@ document.getElementById('one').addEventListener('mouseover', (e) => {
     document.getElementById('one-title').style.top = '-190px'
     document.getElementById('one-title').style.fontSize = '20px'
     document.getElementById('one-text').style.top = '-180px'
-    document.getElementById('one-img').style.filter = 'blur(4px)'
+    document.getElementById('one-img').style.filter = 'brightness(0.3)'
 })
 document.getElementById('one').addEventListener('mouseleave', (e) => {
     document.getElementById('one-title').style.top = '-40px'
@@ -89,7 +89,7 @@ document.getElementById('two').addEventListener('mouseover', (e) => {
     document.getElementById('two-title').style.top = '-190px'
     document.getElementById('two-title').style.fontSize = '20px'
     document.getElementById('two-text').style.top = '-180px'
-    document.getElementById('two-img').style.filter = 'blur(4px)'
+    document.getElementById('two-img').style.filter = 'brightness(0.3)'
 })
 document.getElementById('two').addEventListener('mouseleave', (e) => {
     document.getElementById('two-title').style.top = '-40px'
@@ -102,7 +102,7 @@ document.getElementById('three').addEventListener('mouseover', (e) => {
     document.getElementById('three-title').style.top = '-190px'
     document.getElementById('three-title').style.fontSize = '20px'
     document.getElementById('three-text').style.top = '-180px'
-    document.getElementById('three-img').style.filter = 'blur(4px)'
+    document.getElementById('three-img').style.filter = 'brightness(0.3)'
 })
 document.getElementById('three').addEventListener('mouseleave', (e) => {
     document.getElementById('three-title').style.top = '-40px'
@@ -115,13 +115,39 @@ document.getElementById('four').addEventListener('mouseover', (e) => {
     document.getElementById('four-title').style.top = '-190px'
     document.getElementById('four-title').style.fontSize = '20px'
     document.getElementById('four-text').style.top = '-180px'
-    document.getElementById('four-img').style.filter = 'blur(4px)'
+    document.getElementById('four-img').style.filter = 'brightness(0.3)'
 })
 document.getElementById('four').addEventListener('mouseleave', (e) => {
     document.getElementById('four-title').style.top = '-40px'
     document.getElementById('four-title').style.fontSize = '28px'
     document.getElementById('four-text').style.top = '0px'
     document.getElementById('four-img').style.filter = ''
+})
+//five
+document.getElementById('five').addEventListener('mouseover', (e) => {
+    document.getElementById('five-title').style.top = '-190px'
+    document.getElementById('five-title').style.fontSize = '20px'
+    document.getElementById('five-text').style.top = '-180px'
+    document.getElementById('five-img').style.filter = 'brightness(0.3)'
+})
+document.getElementById('five').addEventListener('mouseleave', (e) => {
+    document.getElementById('five-title').style.top = '-40px'
+    document.getElementById('five-title').style.fontSize = '28px'
+    document.getElementById('five-text').style.top = '0px'
+    document.getElementById('five-img').style.filter = ''
+})
+//six
+document.getElementById('six').addEventListener('mouseover', (e) => {
+    document.getElementById('six-title').style.top = '-190px'
+    document.getElementById('six-title').style.fontSize = '20px'
+    document.getElementById('six-text').style.top = '-180px'
+    document.getElementById('six-img').style.filter = 'brightness(0.3)'
+})
+document.getElementById('six').addEventListener('mouseleave', (e) => {
+    document.getElementById('six-title').style.top = '-40px'
+    document.getElementById('six-title').style.fontSize = '28px'
+    document.getElementById('six-text').style.top = '0px'
+    document.getElementById('six-img').style.filter = ''
 })
 
 if (localStorage.getItem('theme') === 'dark') {

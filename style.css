@@ -134,9 +134,9 @@ div#cb-info {
     width: 300px;
     height: 200px;
     display: inline-block;
-    border-radius: 6px;
+    border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0px 0px 20px 0px #0000004d;
+    box-shadow: 0px 0px 6px 1px #0000006b;
     position: relative;
     left: 50%;
     margin-left: -150px;
@@ -157,9 +157,9 @@ div#cb-info {
     top: -40px;
     float: right;
     font-size: 28px;
-    font-family: 'Nunito';
+    font-family: 'Lexend Deca';
     margin: 0px 16px 0px 0px;
-    text-shadow: 2px 2px 8px black;
+    text-shadow: 2px 2px 5px black;
     pointer-events: none;
     transition-property: top, font-size;
     transition: 0.3s;
@@ -171,10 +171,10 @@ div#cb-info {
     top: 0px;
     height: 174px;
     float: right;
-    font-size: 18px;
-    font-family: 'Nunito';
+    font-size: 16px;
+    font-family: Nunito;
     margin: 0px 6px 0px 16px;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 5px black;
     transition-property: top, font-size;
     transition: 0.4s;
     overflow: scroll;
