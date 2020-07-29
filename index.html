@@ -92,25 +92,11 @@
             </div>
         </a>
     </div>
-    <div class="support-body">
-        <form action="mailto:denistschurtschenthaler@gmail.com" method="POST" enctype="text/plain">
-            <h2>Email</h2>
-            <p>Keep in mind that using this method will expose your email to me. Your email won't be used for any purpose other than helping you with your request, you won't get any advertisement and I won't sell it to any company. If you are not confident and ok with sharing your email/contact info don't use this method. <br>After submitting the form you will be taken to your default Mail service so you can add a file or picture, edit and reformat the email before sending it to me.</p>
-            <input placeholder="Product [ex. Dark Gmail by DM]" type="text" name="Product" id="product">
-            <br>
-            <textarea placeholder="Describe your problem [ex. When I open ... then this happens and this breaks]" name="Description" id="more" cols="30" rows="10" id="more"></textarea>
-            <button type="submit" id="send-mail">Submit</button>
-        </form>
-        <a href="https://discord.gg/m6B2EXu">
-            <div class="discord-body">
-                <img src="./files/New Logo.png" alt="">
-                <div class="discord-content">
-                    <h1>Join my Discord server!</h1>
-                    <p>You can join my Discord server and directly contact me from there and get information about new updates whenever there is.</p>
-                </div>
-            </div>
-        </a>
-    </div>
+    <script>
+        document.getElementById('support').addEventListener('click', () => {
+            document.location.replace('./support.html')
+        })
+    </script>
 </body>
 
 </html>

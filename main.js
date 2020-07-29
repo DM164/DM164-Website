@@ -26,6 +26,19 @@ function switchTheme(){
     }
 }
 
+if (localStorage.getItem('theme') === 'dark') {
+    document.getElementById('switch').style.filter = 'invert(100%)'
+    let noFlash = document.createElement('link')
+    noFlash.href = 'noFlash.css'
+    noFlash.rel = 'stylesheet'
+    document.getElementsByTagName('head')[0].append(noFlash)
+    let darkCss = document.createElement('link')
+    darkCss.href = 'dark.css'
+    darkCss.rel = 'stylesheet'
+    document.getElementsByTagName('head')[0].append(darkCss)
+    dark = true
+}
+
 document.getElementsByClassName('discord')[0].addEventListener('click', (e) => {
     let text = "iGoof#0892";
     navigator.clipboard.writeText(text).then(function () {
@@ -148,33 +161,4 @@ document.getElementById('six').addEventListener('mouseleave', (e) => {
     document.getElementById('six-title').style.fontSize = '28px'
     document.getElementById('six-text').style.top = '0px'
     document.getElementById('six-img').style.filter = ''
-})
-
-if (localStorage.getItem('theme') === 'dark') {
-    document.getElementById('switch').style.filter = 'invert(100%)'
-    let noFlash = document.createElement('link')
-    noFlash.href = 'noFlash.css'
-    noFlash.rel = 'stylesheet'
-    document.getElementsByTagName('head')[0].append(noFlash)
-    let darkCss = document.createElement('link')
-    darkCss.href = 'dark.css'
-    darkCss.rel = 'stylesheet'
-    document.getElementsByTagName('head')[0].append(darkCss)
-    dark = true
-}
-
-// Open support form
-let supportOpen = false
-document.getElementById('support').addEventListener('click', () => {
-    if (supportOpen === false){
-        document.getElementById('support').innerText = 'Home'
-        document.getElementsByClassName('projects')[0].style.display='none'
-        document.getElementsByClassName('support-body')[0].style.display='block'
-        supportOpen = true
-    } else {
-        document.getElementById('support').innerText = 'Get support'
-        document.getElementsByClassName('projects')[0].style.display='grid'
-        document.getElementsByClassName('support-body')[0].style.display='none'
-        supportOpen = false
-    }
 })

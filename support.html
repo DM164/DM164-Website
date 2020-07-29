@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+    <link rel="icon" href="./files/transparent.png">
+    <title>Denis Mignanelli</title>
+</head>
+
+<body>
+    <div id="cb-info">
+        <p>Copied to your clipboard!</p>
+    </div>
+    <img id="switch" src="./files/ld-switch.png" alt="light and dark mode switch">
+    <button id="support">Get support</button>
+    <div class="info">
+        <div class="img-container">
+            <img src="files/pp.jpg">
+        </div>
+        <div class="text-container">
+            <p><span class="name">Denis Mignanelli</span><br>I'm a 16 y.o. student living in Italy, Merano. In my
+                freetime I usually code and I decided
+                to create this website to put all of my projects together and link to my social networks.</p>
+            <div class="social">
+                <p class="email">E-Mail</p>
+                <a href="https://github.com/DM164" class="github">GitHub</a>
+                <a href="https://www.linkedin.com/in/denis-mignanelli-bb3319185/" class="linked-in">LinkedIn</a>
+                <a href="https://stackoverflow.com/users/11881188/denis-m" class="stack">StackOverflow</a>
+                <a href="https://www.instagram.com/denis_mignanelli/" class="instagram">Instagram</a>
+                <a href="https://www.facebook.com/denismignanelli" class="facebook">Facebook</a>
+                <a href="https://twitter.com/DenisMignanelli" class="facebook">Twitter</a>
+                <p class="discord">Discord</p>
+            </div>
+        </div>
+    </div>
+    <div class="support-body">
+        <form action="mailto:denistschurtschenthaler@gmail.com" method="POST" enctype="text/plain">
+            <h2>Email</h2>
+            <p>Keep in mind that using this method will expose your email to me. Your email won't be used for any purpose other than helping you with your request, you won't get any advertisement and I won't sell it to any company. If you are not confident and ok with sharing your email/contact info don't use this method. <br>After submitting the form you will be taken to your default Mail service so you can add a file or picture, edit and reformat the email before sending it to me.</p>
+            <input placeholder="Product [ex. Dark Gmail by DM]" type="text" name="Product" id="product">
+            <br>
+            <textarea placeholder="Describe your problem [ex. When I open ... then this happens and this breaks]" name="Description" id="more" cols="30" rows="10" id="more"></textarea>
+            <button type="submit" id="send-mail">Submit</button>
+        </form>
+        <a href="https://discord.gg/m6B2EXu">
+            <div class="discord-body">
+                <img src="./files/New Logo.png" alt="">
+                <div class="discord-content">
+                    <h1>Join my Discord server!</h1>
+                    <p>You can join my Discord server and directly contact me from there and get information about new updates whenever there is.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <script>
+        document.getElementById('support').addEventListener('click', () => {
+            document.location.replace('./index.html')
+        })
+    </script>
+</body>
+
+</html>
