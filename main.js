@@ -1,10 +1,28 @@
 let dark = false
 
+switch (localStorage.getItem('theme')) {
+    case 'dark':
+        document.getElementById('switch').style.filter = 'invert(100%)'
+        let noFlash = document.createElement('link')
+        noFlash.href = 'noFlash.css'
+        noFlash.rel = 'stylesheet'
+        document.getElementsByTagName('head')[0].append(noFlash)
+        let darkCss = document.createElement('link')
+        darkCss.href = 'dark.css'
+        darkCss.rel = 'stylesheet'
+        document.getElementsByTagName('head')[0].append(darkCss)
+        dark = true
+        break;
+
+    default:
+        break;
+}
+
 document.getElementById('switch').addEventListener('click', () => {
     switchTheme()
 })
 
-function switchTheme(){
+function switchTheme() {
     if (dark === false) {
         document.getElementById('switch').style.rotate = '180deg'
         document.getElementById('switch').style.filter = 'invert(100%)'
@@ -26,18 +44,6 @@ function switchTheme(){
     }
 }
 
-if (localStorage.getItem('theme') === 'dark') {
-    document.getElementById('switch').style.filter = 'invert(100%)'
-    let noFlash = document.createElement('link')
-    noFlash.href = 'noFlash.css'
-    noFlash.rel = 'stylesheet'
-    document.getElementsByTagName('head')[0].append(noFlash)
-    let darkCss = document.createElement('link')
-    darkCss.href = 'dark.css'
-    darkCss.rel = 'stylesheet'
-    document.getElementsByTagName('head')[0].append(darkCss)
-    dark = true
-}
 
 document.getElementsByClassName('discord')[0].addEventListener('click', (e) => {
     let text = "iGoof#0892";
