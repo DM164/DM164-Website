@@ -1,6 +1,9 @@
 * {
     user-select: none;
 }
+body {
+    height: 100vh;
+}
 body, .info {
     transition: background 0.5s;
 }
@@ -64,14 +67,14 @@ img#switch:hover {
 }
 .social a, .social p {
     margin: 0px 0px 8px 0px;
-    background: black;
+    background: #2d2d2d;
     padding: 6px 10px;
     text-decoration: none;
     color: white;
     border-radius: 20px;
     font-family: 'Lexend Deca';
     font-size: 12px;
-    box-shadow: 0px 0px 20px 0px #0000006b;
+    box-shadow: 0px 0px 4px 0px #0000006b;
     transition: 0.3s;
     transition-property: background, width, border, box-shadow;
     display: inline-block;
@@ -141,7 +144,7 @@ div#cb-info {
     display: inline-block;
     border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0px 0px 6px 1px #0000006b;
+    box-shadow: 0px 0px 4px 1px #0000006b;
     position: relative;
     left: 50%;
     margin-left: -150px;
@@ -335,6 +338,25 @@ a {
 }
 .discord-body:hover {
     background-color: rgb(231, 231, 231);
+}
+
+/* Footer */
+footer {
+    bottom: 0px;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    background: #eaeaea;
+    height: 60px;
+    align-items: center;
+}
+footer a, footer p {
+    font-family: 'Lexend Deca';
+    color: #808080;
+    text-decoration: none;
+    display: inline-block;
+    grid-row: 1;
+    text-align: center;
 }
 
 @media screen and (max-width: 1832px){
