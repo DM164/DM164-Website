@@ -349,6 +349,7 @@ footer {
     background: #eaeaea;
     height: 60px;
     align-items: center;
+    display: none;
 }
 footer a, footer p {
     font-family: 'Lexend Deca';
